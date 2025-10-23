@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# Generador de Contraseñas Seguras
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un generador de contraseñas seguro y personalizable, construido con **React** y **CSS puro**.  
+Permite configurar la longitud, incluir mayúsculas, minúsculas, números y símbolos, y copiar la contraseña generada al portapapeles con un solo clic.
 
-## Available Scripts
+🔗 **Repositorio:** [https://github.com/JoseCuriel04/generador-contra](https://github.com/JoseCuriel04/generador-contra)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠 Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** (v18+)
+- **CSS puro** (sin Tailwind ni librerías externas)
+- **Vercel** (para despliegue)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Instalación y Ejecución Local
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Requisitos previos
 
-### `npm run build`
+- Node.js (v16 o superior)
+- npm (v7 o superior) o yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pasos para ejecutar el proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/JoseCuriel04/generador-contra.git
+   cd generador-contra
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Ejecuta el proyecto en modo desarrollo:**
+   ```bash
+   npm start
+   ```
+   Esto abrirá automáticamente el proyecto en tu navegador en la dirección:
+   [http://localhost:3000](http://localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📦 Despliegue en Vercel
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Requisitos previos
+- Una cuenta en **Vercel**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pasos para desplegar
 
-## Learn More
+1. **Sube tu proyecto a GitHub:**
+   ```bash
+   git add .
+   git commit -m "Subiendo proyecto a GitHub"
+   git push origin main
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Importa el repositorio en Vercel:**
+   - Ve a [Vercel Dashboard](https://vercel.com/dashboard).
+   - Haz clic en **"New Project"**.
+   - Selecciona tu repositorio (**generador-contra**).
+   - Haz clic en **"Deploy"**.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+¡Listo! Vercel desplegará automáticamente tu aplicación y te proporcionará una URL para acceder a ella.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎯 Funcionalidades
 
-### Analyzing the Bundle Size
+✅ Generación de contraseñas seguras con opciones personalizables:
+- Longitud ajustable (4 a 32 caracteres)
+- Incluir mayúsculas, minúsculas, números y símbolos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+✅ Copiar al portapapeles con un solo clic  
+✅ Diseño responsivo para móviles, tablets y escritorio  
+✅ Tema oscuro moderno con efectos visuales atractivos  
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📂 Estructura del Proyecto
 
-### Advanced Configuration
+```
+generador-contra/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── PasswordGenerator.jsx
+│   │   └── PasswordGenerator.css
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🤝 Contribuciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-### `npm run build` fails to minify
+1. Haz un **fork** del repositorio.  
+2. Crea una nueva rama con tu funcionalidad:
+   ```bash
+   git checkout -b nueva-funcionalidad
+   ```
+3. Realiza tus cambios y haz un commit:
+   ```bash
+   git commit -m "Añadí una nueva funcionalidad"
+   ```
+4. Sube tus cambios:
+   ```bash
+   git push origin nueva-funcionalidad
+   ```
+5. Abre un **Pull Request** en este repositorio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**.  
+Puedes usarlo y modificarlo libremente.
+
+---
+
+## 📬 Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
+
+- **GitHub:** [@JoseCuriel04](https://github.com/JoseCuriel04)  
+- **Correo:** [joselcl04@gmail.com](mailto:joselcl04@gmail.com)
